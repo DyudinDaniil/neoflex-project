@@ -1,0 +1,28 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+
+  color-scheme: light dark;
+  color: #1C1C27;
+  background-color: #EAEAEA;
+  ;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+}

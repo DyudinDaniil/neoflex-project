@@ -1,0 +1,29 @@
+.total {
+  width: 348px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18.29px;
+  box-shadow: 0px 0px 20px 0px #0000001A;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px;
+  margin-bottom: 15px;
+}
+.btn {
+  width: 100%;
+  padding: 22px 14px;
+  background-color: #101010;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #00000040;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20.72px;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 28px;
+}
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.48px;
+  color: #101010;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btns {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
