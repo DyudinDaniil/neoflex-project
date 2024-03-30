@@ -42,6 +42,16 @@ function CartItem({ good, cart, setCart, delGood }) {
       delGood(newCart);
     }
   }
+  const del = () => {
+    setNewCount(0);
+    good.count = 0;
+    newCart.map(el => {
+      if (el.id === good.id) {
+        el = {...good}
+      }
+    });
+    delGood(newCart);
+  }
 
   return (
    <li className={styles.item}>
@@ -63,7 +73,7 @@ function CartItem({ good, cart, setCart, delGood }) {
     </div>
 
     <div className={styles.right}>
-      <button className={styles.del}>
+      <button className={styles.del} onClick={del}>
         <img src='/public/del.svg'></img>
       </button>
 
