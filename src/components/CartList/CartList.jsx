@@ -1,11 +1,11 @@
 import CartItem from '../CartItem/CartItem';
 import styles from './CartList.module.css';
 
-function CartList({ cart, setCart }) {
+function CartList({ cart, setCart, delGood }) {
 
   const content = cart?.map((good, index) => {
     return (
-      <CartItem key={index} good={good} cart={cart} setCart={setCart} />
+      <CartItem key={index} good={good} cart={cart} setCart={setCart} delGood={delGood} />
     )
   });
 

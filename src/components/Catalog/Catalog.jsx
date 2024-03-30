@@ -3,7 +3,7 @@ import styles from './Catalog.module.css';
 
 function Catalog({ catalog, cart, setCart }) {
 
-  const content = catalog.map((good, index) => {
+  const content = catalog?.map((good, index) => {
     return (
       <CatalogItem key={index} good={good} cart={cart} setCart={setCart} />
     )

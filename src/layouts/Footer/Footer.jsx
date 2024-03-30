@@ -14,7 +14,7 @@ function Footer() {
 
     <ul className={styles.nav}>
       <li className={styles.nav__item}>
-        <Link to='/like' className={styles.nav__link}>
+        <Link to='/saved' className={styles.nav__link}>
           Избранное
         </Link>
       </li>

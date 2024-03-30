@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './CartItem.module.css';
 
 
-function CartItem({ good, cart, setCart }) {
+function CartItem({ good, cart, setCart, delGood }) {
 
   const {id, img, title, price, rate, count} = {...good};
   const newCart = cart ? [...cart] : []
@@ -21,7 +21,7 @@ function CartItem({ good, cart, setCart }) {
     setSumOfGood(price * (newCount + 1));
   }
   const decrease = () => {
-    if (newCount >= 1) {
+    if (newCount > 1) {
       setNewCount(newCount - 1);
       good.count = good.count - 1;
       newCart.map(el => {
@@ -31,7 +31,16 @@ function CartItem({ good, cart, setCart }) {
       });
       setCart(newCart);
       setSumOfGood(price * (newCount - 1));
-    } 
+    }  else {
+      setNewCount(newCount - 1);
+      good.count = good.count - 1;
+      newCart.map(el => {
+        if (el.id === good.id) {
+          el = {...good}
+        }
+      });
+      delGood(newCart);
+    }
   }
 
   return (
